@@ -1,0 +1,17 @@
+1. 程序与功能，打开hyper-v
+
+2. 安装docker，重启
+https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe
+
+3. 更新WSL
+https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
+
+4. docker 设置docker engine以添加国内镜像源，增加一行
+ "registry-mirrors": ["https://docker.mirrors.ustc.edu.cn/"]
+也可以用下面两个网址替代：
+["https://hub-mirror.c.163.com","https://mirror.baidubce.com"]
+
+5. 把mariadb镜像、nextcloud镜像和nginx镜像拉到本地，powershell命令行（一行一行来）
+docker pull mariadb
+docker pull nextcloud
+docker pull nginx
